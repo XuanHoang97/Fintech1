@@ -1,0 +1,195 @@
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+;
+//transform mixin for all browser;
+@mixin screen1440 {
+    @media(max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin screen1024 {
+    @media(max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media(max-width: 576px) {
+        @content;
+    }
+}
+
+//responsive mixin 
+@mixin mulish {
+    font-family: 'Mulish', sans-serif;
+}
+
+@mixin roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin item_menu {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+@mixin button {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+@mixin tit__module {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+@mixin redirect_module {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+@mixin regiter_input {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+@mixin login_input {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@mixin policy {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+@mixin btn__social {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px
+}
+
+@mixin payment__tit {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 43px;
+}
+
+@mixin payment__head {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+@mixin btn__next {
+    background: #2F9773;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 24px;
+    cursor: pointer;
+}
+
+@mixin price {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #A8FFD0;
+}
+
+@mixin sale__off {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration-line: line-through;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+@mixin saver {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+@mixin label_pm {
+    font-family: Mulish;
+    font-size: 16px;
+    line-height: 24px;
+    color: #194133;
+}
+
+@mixin wait {
+    background: #FFC107;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    width: 123px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+@mixin delivering {
+    background: #17A2B8;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 15px;
+    width: 123px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+@mixin done {
+    background: #28A745;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 15px;
+    width: 123px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}

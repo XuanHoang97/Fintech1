@@ -1,0 +1,234 @@
+@import "../styles/variables.scss";
+.wrapper {
+    .order_info {
+        @include phone {
+            background: #E5E5E5;
+        }
+        background: linear-gradient(262.79deg, #34A468 5.56%, #298C7A 100.54%);
+        .payment__customer {
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: normal;
+            margin: auto;
+            width: 977px;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            @include phone {
+                width: 100%;
+            }
+            .customer__cont {
+                background: #F9FFF9;
+                height: 675px;
+                width: 900px;
+                padding: 69px 48px 0 48px;
+                @include phone {
+                    width: 100%;
+                    margin: 0px;
+                    padding: 0px;
+                    background: none;
+                }
+                h1 {
+                    @include phone {
+                        display: none;
+                    }
+                    font-weight: 800;
+                    font-size: 34px;
+                    line-height: 43px;
+                    color: #194133;
+                    margin-bottom: 48px;
+                }
+                .payment--user {
+                    height: 206px;
+                    width: 801px;
+                    padding: 16px;
+                    display: flex;
+                    margin-bottom: 16px;
+                    background-color: #2A8972;
+                    @include phone {
+                        flex-direction: column;
+                        height: 60vh;
+                        width: 85%;
+                        margin: auto;
+                        margin-bottom: 24px;
+                        background: white;
+                    }
+                    .user__detail {
+                        width: 50%;
+                        @include phone {
+                            width: 100%;
+                            margin-bottom: 32px;
+                        }
+                        .detail__order {
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            margin-bottom: 16px;
+                            .detail_heading {
+                                font-weight: bold;
+                                font-size: 24px;
+                                line-height: 30px;
+                                color: #FFFFFF;
+                                @include phone {
+                                    color: #2F9773;
+                                }
+                            }
+                            span {
+                                font-size: 18px;
+                                line-height: 23px;
+                                color: #FFFFFF;
+                                @include phone {
+                                    color: #2F9773;
+                                }
+                            }
+                        }
+                        h4 {
+                            font-size: 18px;
+                            line-height: 23px;
+                            color: #FFFFFF;
+                            margin-right: 16px;
+                            margin-bottom: 4px;
+                            @include phone {
+                                font-weight: bold;
+                                font-size: 18px;
+                                line-height: 23px;
+                                text-align: center;
+                                color: #6C757D;
+                            }
+                        }
+                        .detail {
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            img {
+                                cursor: pointer;
+                            }
+                            &__item {
+                                img {
+                                    @include phone {
+                                        display: none;
+                                    }
+                                }
+                                .note_mobile {
+                                    @include phone {
+                                        display: block;
+                                    }
+                                    display:none;
+                                }
+                                .note_mobile {
+                                    @include phone {
+                                        display: block;
+                                    }
+                                    display:none;
+                                }
+                                .detail--info {
+                                    position: absolute;
+                                    display: none;
+                                    left: 141px;
+                                    top: 24px;
+                                    padding: 16px;
+                                    background: #FFFFFF;
+                                    box-shadow: 3px 5px 10px rgba(25, 65, 51, 0.4);
+                                    border-radius: 8px;
+                                    width: 315px;
+                                    @include phone {
+                                        width: 50%;
+                                    }
+                                    .heading {
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        color: #194133;
+                                    }
+                                    >p {
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        color: #194133;
+                                        width: 100%;
+                                        margin-top: 13px;
+                                        span {
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                            &__item:hover {
+                                .detail--info {
+                                    display: block;
+                                }
+                            }
+                        }
+                        p {
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #FFFFFF;
+                            margin-bottom: 4px;
+                            width: 50%;
+                            @include phone {
+                                color: #212529;
+                                width: 70%;
+                            }
+                        }
+                        h2 {
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 23px;
+                            margin-top: 16px;
+                            color: #FFFFFF;
+                            @include phone {
+                                color: #6C757D;
+                            }
+                        }
+                        .time {
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #FFFFFF;
+                            @include phone {
+                                color: #6C757D;
+                            }
+                        }
+                    }
+                    .user__contact {
+                        @extend .user__detail;
+                        .addr {
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 30px;
+                            color: #FFFFFF;
+                            margin-bottom: 16px;
+                            @include phone {
+                                color: #2F9773;
+                            }
+                        }
+                        .user--name {
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #FFFFFF;
+                            margin-bottom: 8px;
+                            @include phone {
+                                color: #6C757D;
+                            }
+                        }
+                        p {
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+                .content {
+                    font-style: italic;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #194133;
+                    margin-left: 16px;
+                    @include phone {
+                        color: #2F9773;
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

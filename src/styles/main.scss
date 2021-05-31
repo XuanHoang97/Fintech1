@@ -1,0 +1,919 @@
+@import "./variables.scss";
+.wrapper {
+    .container {
+        width: 1280px;
+        margin: 0 auto;
+        @include phone {
+            width: 100%;
+        }
+    }
+    .intro {
+        @include phone {
+            padding: 30px 16px;
+            height: 100%;
+        }
+        background: linear-gradient(262.79deg, #34A468 5.56%, #298C7A 100.54%);
+        height: 93vh;
+        @include mulish;
+        display: grid;
+        align-items: center;
+        color: #FFFFFF;
+        margin-bottom: 31px;
+        &__container {
+            h1 {
+                @include phone {
+                    font-size: 32px;
+                    line-height: 106%;
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 11px;
+                }
+                font-weight: 900;
+                font-size: 52px;
+                line-height: 55px;
+                text-transform: capitalize;
+                margin-bottom: 18px;
+                width: 45%;
+            }
+            h4 {
+                @include phone {
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 8px;
+                }
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 30px;
+                width: 40%;
+                margin-bottom: 13px;
+            }
+            p {
+                @include phone {
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 19px;
+                }
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 23px;
+                margin-bottom: 31px;
+                width: 38%;
+            }
+            >span {
+                @include phone {
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 8px;
+                }
+                font-size: 18px;
+                line-height: 23px;
+                display: block;
+                margin-bottom: 13px;
+            }
+            .time {
+                display: flex;
+                gap: 10px;
+                @include phone {
+                    justify-content: center;
+                }
+                &>* {
+                    display: flex;
+                    flex-direction: column;
+                    .set {
+                        display: flex;
+                        .time--number {
+                            @include phone {
+                                font-size: 16px;
+                                line-height: 20px;
+                                text-align: center;
+                                padding: 15px;
+                            }
+                            padding: 24px 25px;
+                            background: #FFFFFF;
+                            border-radius: 8px;
+                            font-weight: bold;
+                            font-size: 26px;
+                            line-height: 33px;
+                            text-align: center;
+                            color: #135948;
+                            margin-bottom: 6px;
+                        }
+                        >span {
+                            @include phone {
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                            align-self: center;
+                            padding-left: 7.5px;
+                            font-size: 20px;
+                        }
+                    }
+                    >span {
+                        @include phone {
+                            font-size: 12px;
+                            line-height: 15px;
+                            margin-bottom: 16px;
+                        }
+                        text-align: center;
+                        margin-bottom: 29px;
+                        margin-right: 7.5px;
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
+                }
+            }
+            .btn-begin {
+                @include phone {
+                    font-size: 12px;
+                    line-height: 15px;
+                    width: 167px;
+                    padding: 9px 0;
+                    margin: auto;
+                    margin-bottom: 6px;
+                }
+                background: #FFE600;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                text-align: center;
+                width: 272px;
+                padding: 15px 0;
+                border-radius: 27px;
+                margin-bottom: 13px;
+                text-transform: uppercase;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    color: #135948;
+                }
+            }
+            .content {
+                display: flex;
+                align-items: center;
+                @include phone {
+                    justify-content: center;
+                }
+                img {
+                    margin-right: 4px;
+                }
+                span {
+                    @include phone {
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+    .title {
+        @include phone {
+            margin-bottom: 42px;
+            padding: 0 16px;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            justify-content: space-around;
+            margin-bottom: 42px;
+            img {
+                width: 26%;
+            }
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 71px;
+    }
+    .product {
+        @include mulish;
+        margin-bottom: 50px;
+        @include phone {
+            margin-bottom: 0;
+        }
+        &__item {
+            .item--list {
+                @include phone {
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 30px;
+                }
+                margin-bottom: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                line-height: 23px;
+                .list__farmer {
+                    @include phone {
+                        padding: 11px 49px;
+                    }
+                    padding: 13px 53px;
+                    cursor: pointer;
+                    color: #C1C1C1;
+                }
+                .list__profes {
+                    @include phone {
+                        padding: 11px 49px;
+                    }
+                    text-align: center;
+                    text-transform: capitalize;
+                    color: #C1C1C1;
+                    cursor: pointer;
+                    padding: 13px 53px;
+                }
+                .active {
+                    background: #34A468;
+                    border-radius: 23px;
+                    color: #FFFFFF;
+                }
+            }
+            .item--farmer,
+            .item--profes {
+                h2 {
+                    @include phone {
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+                    text-align: center;
+                    margin-bottom: 48px;
+                    font-weight: 500;
+                    font-size: 34px;
+                    line-height: 40px;
+                    color: #2B2B2B;
+                    text-transform: capitalize;
+                }
+                .farmer__item {
+                    display: grid;
+                    gap: 15px;
+                    grid-template-columns: 33% 33% 33%;
+                    @include phone {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    &>* {
+                        padding: 45px 44px 21px 44px;
+                        border: 1px solid #D0D0D0;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                        @include phone {
+                            padding: 37px 35px 16px 35px;
+                        }
+                        h3 {
+                            @include phone {
+                                font-size: 16px;
+                                line-height: 20px;
+                                margin-bottom: 16px;
+                            }
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 23px;
+                            text-align: center;
+                            text-transform: capitalize;
+                            color: #194133;
+                            margin-bottom: 20px;
+                        }
+                        >p {
+                            @include phone {
+                                font-size: 14px;
+                                line-height: 18px;
+                                width: 90%;
+                                margin-bottom: 26px;
+                            }
+                            font-size: 16px;
+                            line-height: 20px;
+                            margin: auto;
+                            width: 90%;
+                            text-align: center;
+                            color: #194133;
+                            margin-bottom: 33px;
+                        }
+                        .copper__sale {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            >span {
+                                @include phone {
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                                font-weight: 300;
+                                font-size: 20px;
+                                line-height: 25px;
+                                text-decoration-line: line-through;
+                                color: #989898;
+                            }
+                            >p {
+                                @include phone {
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    padding: 3px 14px;
+                                }
+                                background: #39C494;
+                                border-radius: 15px;
+                                color: #FFFFFF;
+                                padding: 5px 22px;
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                        h1 {
+                            @include phone {
+                                font-size: 36px;
+                                line-height: 45px;
+                                margin-bottom: 26px;
+                            }
+                            font-weight: bold;
+                            font-size: 48px;
+                            line-height: 60px;
+                            text-align: center;
+                            color: #194133;
+                            margin-bottom: 33px;
+                        }
+                        button {
+                            @include phone {
+                                font-size: 16px;
+                                line-height: 20px;
+                                margin-bottom: 20px;
+                            }
+                            background: #2F9773;
+                            border-radius: 29px;
+                            text-align: center;
+                            margin-bottom: 25px;
+                            width: 100%;
+                            border: none;
+                            padding: 12px 0;
+                            font-size: 18px;
+                            line-height: 23px;
+                            text-align: center;
+                            cursor: pointer;
+                            a {
+                                text-decoration: none;
+                                color: #FFFFFF;
+                            }
+                        }
+                        .contents {
+                            padding-bottom: 52px;
+                            border-bottom: 1px solid #D0D0D0;
+                            @include phone {
+                                padding-bottom: 42px;
+                            }
+                            h4 {
+                                @include phone {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                }
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: #194133;
+                            }
+                            p {
+                                @include phone {
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    margin-top: 10px;
+                                }
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: #194133;
+                                margin-top: 13px;
+                                >span {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        >h2 {
+                            @include phone {
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+                            margin-top: 18px;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 20px;
+                            justify-self: center;
+                            color: #2F9773;
+                            margin-bottom: 0;
+                            cursor: pointer;
+                        }
+                    }
+                    .item--copper2 {
+                        position: relative;
+                        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+                        border-radius: 0px 0px 10px 10px;
+                        .copper__sale {
+                            >p {
+                                background: #FFCD6D;
+                            }
+                        }
+                        button {
+                            background: #FAAD1B;
+                        }
+                        >h2 {
+                            color: #FAAD1B;
+                        }
+                    }
+                    .item--copper2::before {
+                        @include phone {
+                            padding: 6px 0;
+                            top: -35px;
+                        }
+                        content: "PHỔ BIẾN NHẤT";
+                        text-transform: uppercase;
+                        position: absolute;
+                        background: #FAAD1B;
+                        text-align: center;
+                        top: -44px;
+                        left: 0;
+                        right: 0;
+                        padding: 11px 0;
+                        color: #FFFFFF;
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
+                }
+                .swipe-holder {
+                    height: 700px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin: auto;
+                    gap: 10px;
+                    .swipeitem {
+                        margin-top: 43px;
+                        @extend .farmer__item;
+                        .item--copper2,
+                        .item--copper {
+                            width: 80%;
+                        }
+                        .has-pointer-event {
+                            pointer-events: fill;
+                        }
+                    }
+                }
+            }
+            .item--profes {
+                .farmer__item {
+                    display: flex;
+                    justify-content: center;
+                    .item--copper2 {
+                        box-shadow: none;
+                    }
+                    .item--copper2::before {
+                        display: none;
+                    }
+                    .item--copper3 {
+                        width: 33%;
+                        position: relative;
+                        border-radius: 0px 0px 10px 10px;
+                        .copper__sale {
+                            >p {
+                                background: #D892FF;
+                            }
+                        }
+                        button {
+                            background: #BD4DFA;
+                        }
+                        >h2 {
+                            color: #BD4DFA;
+                        }
+                    }
+                }
+                .swipe-holder {
+                    height: 700px;
+                    width: 100%;
+                    .swipeitem {
+                        margin-top: 43px;
+                        @extend .item--farmer;
+                        .item--copper2,
+                        .item--copper3 {
+                            width: 80%;
+                            border-radius: 10px;
+                        }
+                        .item--copper2 {
+                            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+                        }
+                        .has-pointer-event {
+                            pointer-events: fill;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact {
+        @include roboto;
+        background: #FAFBFF;
+        margin-bottom: 100px;
+        padding: 80px 0;
+        @include phone {
+            margin-bottom: 0px;
+            padding: 32px 14px;
+        }
+        h2 {
+            @include phone {
+                font-size: 24px;
+                line-height: 41px;
+            }
+            font-size: 34px;
+            line-height: 41px;
+            text-align: center;
+            color: #194133;
+            margin-bottom: 22px;
+        }
+        p {
+            @include phone {
+                font-size: 12px;
+                line-height: 21px;
+                width: 100%;
+                margin-bottom: 22px;
+            }
+            font-size: 15px;
+            line-height: 21px;
+            text-align: center;
+            color: #194133;
+            width: 30%;
+            margin: auto;
+            font-size: 15px;
+            line-height: 21px;
+            text-align: center;
+            color: #194133;
+            margin-bottom: 29px;
+            span {
+                color: #2F9773;
+                font-weight: bold;
+            }
+        }
+        .contact__user {
+            @include phone {
+                width: 100%;
+            }
+            position: relative;
+            width: 38%;
+            display: flex;
+            margin: 0 auto;
+            input {
+                width: 100%;
+                box-sizing: border-box;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 25px;
+                height: 50px;
+                border: 1px solid #DADCE0;
+                outline: none;
+            }
+            button {
+                @include phone {
+                    width: 88px;
+                    right: 0;
+                }
+                border: none;
+                position: absolute;
+                background: #2F9773;
+                border-radius: 100px;
+                height: 50px;
+                right: 0;
+                width: 160px;
+                font-size: 16px;
+                line-height: 16px;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .demo {
+        @include roboto;
+        &>* {
+            @include phone {
+                display: grid;
+                padding: 0 15px;
+                margin-bottom: 0px;
+            }
+            display: flex;
+            margin-bottom: 80px;
+            justify-content: space-between;
+            .demo__content {
+                @include phone {
+                    width: 100%;
+                    margin-bottom: 37px;
+                }
+                align-self: center;
+                width: 40%;
+                h3 {
+                    @include phone {
+                        padding-top: 50px;
+                        border-top: 1px dashed #D1D1D1;
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #727586;
+                    margin-bottom: 13px;
+                }
+                .border {
+                    border-top: none;
+                }
+                h2 {
+                    @include phone {
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+                    font-size: 34px;
+                    line-height: 41px;
+                    color: #194133;
+                    margin-bottom: 22px;
+                }
+                p {
+                    @include phone {
+                        width: 100%;
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                    font-size: 15px;
+                    line-height: 21px;
+                    color: #727586;
+                    margin-bottom: 24px;
+                    width: 80%;
+                }
+                a {
+                    @include phone {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #194133;
+                    text-decoration: none;
+                }
+            }
+            .demo__img {
+                @include phone {
+                    width: 100%;
+                    margin-bottom: 50px;
+                    border: 1px dashed #D1D1D1;
+                    box-sizing: border-box;
+                }
+                width: 49%;
+                padding-left: 15px;
+                height: 307px;
+                background: #C4C4C4;
+            }
+        }
+        .reverse {
+            flex-direction: row-reverse;
+        }
+    }
+    .present {
+        @include roboto;
+        margin-bottom: 76px;
+        @include phone {
+            background: #FAFBFF;
+            padding: 61px 0;
+            margin-bottom: 48px;
+        }
+        h1 {
+            @include phone {
+                font-size: 24px;
+                line-height: 28px;
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
+            font-size: 34px;
+            line-height: 41px;
+            text-align: center;
+            color: #194133;
+            padding-top: 25px;
+            margin-bottom: 58px;
+        }
+        &__intro {
+            display: grid;
+            grid-template-columns: 56% 44%;
+            @include phone {
+                display: flex;
+                flex-direction: column;
+            }
+            .present--img {
+                @include phone {
+                    width: 100%;
+                    height: 255px;
+                    margin-bottom: 25px;
+                }
+                background: #C4C4C4;
+                height: 80%;
+                align-self: center;
+            }
+            .present--content {
+                @include phone {
+                    width: 100%;
+                    margin-left: 0;
+                }
+                margin-left: 111px;
+                .drop {
+                    margin-bottom: 47px;
+                }
+                .content {
+                    @include phone {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    img {
+                        margin-bottom: 15px
+                    }
+                    h3 {
+                        font-size: 21px;
+                        line-height: 29px;
+                        color: #194133;
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        @include phone {
+                            width: 70%;
+                            text-align: center;
+                        }
+                        font-size: 15px;
+                        line-height: 21px;
+                        width: 31.5%;
+                        color: #727586;
+                    }
+                }
+            }
+        }
+    }
+    .benefit {
+        @include roboto;
+        margin-bottom: 106px;
+        @include phone {
+            margin-bottom: 53px;
+        }
+        h1 {
+            @include phone {
+                font-size: 24px;
+                line-height: 28px;
+                width: 60%;
+            }
+            font-size: 34px;
+            line-height: 41px;
+            text-align: center;
+            margin: auto;
+            color: #194133;
+            margin-bottom: 30px;
+            width: 30%;
+        }
+        &__mobile {
+            display: grid;
+            grid-template-columns: 33.34% 33.33% 33.33%;
+            ;
+            display: none;
+            @include phone {
+                display: grid;
+            }
+            .table {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                h2 {
+                    text-align: center;
+                    border-left: 0.5px solid #C4C4C4;
+                    padding: 0px 5px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 124.19%;
+                    margin-top: 16px;
+                    text-transform: uppercase;
+                    padding-bottom: 10px;
+                }
+                p {
+                    text-align: center;
+                    border-top: 0.5px solid #C4C4C4;
+                    display: grid;
+                    align-items: center;
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding: 0 10px;
+                }
+                p:nth-child(7) {
+                    margin-bottom: 10px;
+                }
+            }
+            .farm,
+            .usually {
+                p {
+                    border-left: 0.5px solid #C4C4C4;
+                }
+            }
+            .titles {
+                p {
+                    color: #194133;
+                }
+            }
+            .usually {
+                p {
+                    color: #727586;
+                }
+            }
+            .farm {
+                p {
+                    color: #28A745;
+                }
+            }
+        }
+        &__compare {
+            @include phone {
+                display: none;
+            }
+            display: grid;
+            grid-template-columns: 50% 50%;
+            &>* {
+                h3 {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 41px;
+                    text-transform: uppercase;
+                    color: #194133;
+                    padding: 0 20px;
+                    margin-bottom: 17px;
+                    border-bottom: 1px solid #C4C4C4;
+                }
+                .key-value {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 18px;
+                    line-height: 41px;
+                    color: #727586;
+                    padding: 0 20px;
+                    border-bottom: 1px solid #C4C4C4;
+                    margin-bottom: 17px;
+                }
+            }
+            .benefit--regular {
+                padding-right: 11px;
+                border-right: 3px solid #194133;
+            }
+            .benefit--farm {
+                padding-left: 11px;
+            }
+        }
+    }
+    .surety {
+        @include roboto;
+        color: #194133;
+        text-align: center;
+        margin-bottom: 65px;
+        @include phone {
+            margin-bottom: 48px;
+            padding: 0 15px;
+        }
+        h1 {
+            @include phone {
+                font-size: 24px;
+                line-height: 33px;
+            }
+            font-size: 34px;
+            line-height: 41px;
+            margin-bottom: 22px;
+        }
+        p {
+            @include phone {
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 20px;
+            }
+            font-size: 15px;
+            line-height: 21px;
+            margin-bottom: 29px;
+        }
+        .surety-btn {
+            @include phone {
+                font-size: 12px;
+                line-height: 13px;
+                width: 208px;
+                height: 37px;
+            }
+            font-size: 16px;
+            line-height: 16px;
+            color: #FFFFFF;
+            background: #2F9773;
+            border-radius: 100px;
+            width: 255px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            cursor: pointer;
+        }
+    }
+}

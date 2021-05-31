@@ -1,0 +1,358 @@
+@import "./variables.scss";
+.register {
+    width: 100%;
+    margin: auto;
+    background: #E6EFF2;
+    height: 100vh;
+    .container {
+        @include phone{
+            width: 100%;
+            padding: 10rem 0;
+        }
+        width: 25%;
+        margin: auto;
+        padding: 15rem 0;
+        .logo,
+        .register__heading {
+            text-align: center;
+        }
+        .register__heading {
+            margin: 3.5rem 0 2rem 0;
+            @include tit__module;
+            font-family: Roboto;
+            font-style: normal;
+            color: #9E97AA;
+        }
+        .register__social {
+            gap: 0.5rem;
+            display: flex;
+            justify-content: center;
+            @include btn__social;
+            .reg__google {
+                @include btn__social;
+                @include phone{
+                    padding: 0;
+                }
+                font-family: Poppins;
+                font-style: normal;
+                background: #020D1C;
+                border-radius: 5px;
+                color: white;
+                padding: 5px 15px;
+                display: flex;
+                align-items: center;
+                width: 118px;
+                justify-content: center;
+                img {
+                  
+                    padding: 0px 15px 0px 0px;
+                }
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    color: #FFFFFF;
+                    align-items: center;
+                }
+            }
+            .reg__fb {
+                @include phone{
+                    padding: 0;
+                    height: 40px;
+                }
+                border: 1px solid #badada;
+                border-radius: 5px;
+                font-family: Poppins;
+                font-style: normal;
+                @include btn__social;
+                text-align: center;
+                color: #020D1C;
+                padding: 8px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 118px;
+                img {
+                    @include phone{
+                        padding: 0px 5px 0px 0px;
+                    }
+                    padding: 0px 15px 0px 0px;
+                }
+                a {
+                    text-decoration: none;
+                    color: #020D1C;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .enter__info {
+            width: 100%;
+            @include phone{
+                padding: 0 15px;
+                box-sizing: border-box;
+            }
+            .input__item1 {
+                display: flex;
+                margin: 2rem 0; 
+                justify-content: space-between;
+                // @include phone{
+                //     width: 345px;
+                // }
+              
+                .input--content {
+                    position: relative;
+                    width: fit-content;
+                    @include phone{
+                        width: 45%;
+                    }
+                    .checkName {
+                        display: flex;
+                        justify-content: center;
+                        place-items: center;
+                        position: absolute;
+                        right: 6px;
+                        top: 9px;
+                    }
+                    input {
+                        @include phone{
+                            width: 67%;
+                            padding-right: 30px;
+                         
+                        }
+                        height: 4rem;
+                        width: 16.7rem;
+                        border: none;
+                        border-radius: 3px;
+                        border-left: 3px solid #000;
+                        outline: none;
+                        padding: 0 18px;
+                    }
+                }
+            }
+            ::placeholder {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                color: #C4C4C4;
+                font-family: Poppins;
+                font-style: normal;
+            }
+            .input__item2 {
+                position: relative;
+                margin: 2rem 0;
+                .checkName {
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    position: absolute;
+                    right: 6px;
+                    top: 9px;
+                }
+                input {
+                    @include phone{
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding-right: 40px;
+
+                    }
+                    height: 4rem;
+                    
+                    width: 436px;
+                    border: none;
+                    padding: 0 18px;
+                    border-radius: 3px;
+                    border-left: 3px solid #000;
+                    outline: none;
+                }
+                p{
+                   
+                    font-family: Poppins;
+                    font-style: italic;
+                    font-weight: normal;
+                    font-size: 12px;
+                    padding: 5px 0px 0px 10px;
+                    color: #DC3545;
+                }
+            }
+            .input__item3 {
+                .item3 {
+                    margin: 2rem 0;
+                    position: relative;
+                   
+                    .checkName {
+                        display: flex;
+                        justify-content: center;
+                        place-items: center;
+                        position: absolute;
+                        right: 6px;
+                        top: 9px;
+                    }
+                    input {
+                        @include phone{
+                            width: 100%;
+                            box-sizing: border-box;
+                            padding-right: 40px;
+                        }
+                        height: 4rem;
+                        border: none;
+                        border-radius: 3px;
+                        border-left: 3px solid #000;
+                        outline: none;
+                        padding: 0 18px;
+                        width: 436px;
+                    }
+                }
+                .focus {
+                    @include phone{
+                        width: 100%;
+                        box-sizing: border-box;
+                        
+                    }
+                    display: none;
+                    &--active {
+                        display: block;
+                    }
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 4px 16px;
+                    width: 475px;
+                    height: 56px;
+                    background: #D4EDDA;
+                    border: 1px solid #C3E6CB;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    p {
+                        font-size: 12px;
+                        line-height: 24px;
+                        width: 273px;
+                        color: #155724;
+                    }
+                }
+            }
+            .input__item4 {
+                margin: 2rem 0;
+                position: relative;
+             
+                .checkName {
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    position: absolute;
+                    right: 6px;
+                    top: 9px;
+                }
+                input {
+                    @include phone{
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding-right: 40px;
+    
+                    }
+                    height: 4rem;
+                    padding: 0 18px;
+                    border: none;
+                    border-radius: 3px;
+                    border-left: 3px solid #000;
+                    outline: none;
+                    width: 436px;
+                }
+            }
+        }
+        .policy {
+            @include phone{
+                padding-left: 30px;
+            }
+            display: flex;
+            margin: 0 0 1.5rem 0;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0px 0px 0px 10px;
+            .check {
+                border: 1px solid #ccc;
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .check-img {
+                    display: block;
+                }
+                .active {
+                    display: none;
+                }
+            }
+            input {
+                width: 2rem;
+                height: 2rem;
+            }
+            label {
+                @include policy;
+                font-family: DM Sans;
+                font-style: normal;
+                color: #575962;
+                padding: 0 1.2rem 0 1.5rem;
+            }
+            a {
+                @include policy;
+                font-family: DM Sans;
+                font-style: normal;
+                color: #34A468;
+                text-decoration: none;
+            }
+        }
+        .continue {
+            text-align: center;
+            font-family: Poppins;
+            font-style: normal;
+            margin: 3.5rem 0 2rem 0;
+            @include button;
+            .cont {
+                @include button;
+                font-family: Poppins;
+                font-style: normal;
+                width: 117px;
+                background: black;
+                margin: auto;
+                padding: 12px 27px;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+                border-radius: 8px;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        .redirect_module {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0;
+            gap: 1rem;
+            .already,
+            .login {
+                @include redirect_module;
+            }
+            .already {
+                font-family: DM Sans;
+                font-style: normal;
+                color: #ABA5B6;
+                padding: 0px 5px;
+                a {
+                    text-decoration: none;
+                    color: #ABA5B6;
+                }
+            }
+            .login {
+                font-family: DM Sans;
+                font-style: normal;
+                color: #34A468;
+                a {
+                    text-decoration: none;
+                    color: #34A468;
+                }
+            }
+        }
+    }
+}

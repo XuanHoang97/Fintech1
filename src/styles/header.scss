@@ -1,0 +1,80 @@
+@import "./variables.scss";
+header {
+    width: 100%;
+    margin: auto;
+    background: #2A8972;
+    z-index: 100;
+    @include roboto;
+    @include phone {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .menu {
+        width: 1280px;
+        align-items: center;
+        margin: 0 auto;
+        display: grid;
+        height: 90px;
+        grid-template-columns: 2.5fr 1.2fr;
+        padding: 10px 0px;
+        @include tablet {
+            width: 100%;
+        }
+        &__mobile {
+            display: none;
+            @include phone {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                justify-self: end;
+            }
+            .store {
+                img {
+                    cursor: pointer;
+                }
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-right: 10px;
+            }
+        }
+        .menu__item {
+            @include phone {
+                display: none;
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .login {
+                background: #FFE500;
+                border-radius: 15px;
+                padding: 10px 30px;
+                @include item_menu;
+                color: #135948;
+                font-style: normal;
+            }
+            a:first-child,
+            a:nth-child(2) {
+                @include item_menu;
+                color: #FFFFFF;
+                font-style: normal;
+            }
+            .store {
+                img {
+                    cursor: pointer;
+                }
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

@@ -1,0 +1,477 @@
+@import "./variables.scss";
+.Store {
+    background-color: #E5E5E5;
+    @include mulish;
+    .container {
+        width: 1280px;
+        margin: 0 auto;
+        @include phone {
+            width: 100%;
+        }
+    }
+    .infoProduct {
+        padding-top: 37px;
+        display: grid;
+        grid-template-columns: 41% 32% 23.55%;
+        justify-content: space-between;
+        @include phone {
+            padding-top: 20px;
+        }
+        @include phone {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 38px;
+        }
+        .info__slide {
+            .pro--heading {
+                display: flex;
+                align-items: center;
+                display: none;
+                @include phone {
+                    display: flex;
+                    >img {
+                        width: unset;
+                    }
+                }
+                h1 {
+                    @include phone {
+                        margin-bottom: 3px;
+                    }
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 30px;
+                    text-transform: capitalize;
+                    color: #2E2E2E;
+                    margin-right: 48px;
+                }
+            }
+            .pro--price {
+                display: flex;
+                justify-content: space-between;
+                display: none;
+                @include phone {
+                    display: flex;
+                    margin-bottom: 10px;
+                }
+                h2 {
+                    font-weight: bold;
+                    font-size: 36px;
+                    text-transform: capitalize;
+                    color: #194133;
+                }
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-decoration-line: line-through;
+                    text-transform: capitalize;
+                    color: #989898;
+                }
+                h3 {
+                    font-weight: 600;
+                    font-size: 8px;
+                    line-height: 10px;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                    background-color: #39C394;
+                    height: 20px;
+                    border-radius: 15px;
+                    padding: 0 9px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            img {
+                width: 100%;
+            }
+            @include phone {
+                margin: 0 15px;
+            }
+            .info--item {
+                width: 100%;
+                display: flex;
+                margin-top: 5px;
+                justify-content: space-between;
+                gap: 6px;
+                margin-bottom: -2px;
+                &>* {
+                    flex: 1 1 100%;
+                }
+            }
+        }
+        .info__pro {
+            padding: 13px 14px 0 10px;
+            background-color: #fff;
+            @include phone {
+                margin: 0 15px;
+                padding-bottom: 20px;
+                margin-top: 5px;
+                ;
+            }
+            .pro--heading {
+                display: flex;
+                align-items: center;
+                @include phone {
+                    display: none;
+                }
+                h1 {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 30px;
+                    text-transform: capitalize;
+                    color: #2E2E2E;
+                    margin-right: 48px;
+                }
+            }
+            .pro--price {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 5px;
+                @include phone {
+                    display: none;
+                }
+                h2 {
+                    font-weight: bold;
+                    font-size: 36px;
+                    text-transform: capitalize;
+                    color: #194133;
+                }
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-decoration-line: line-through;
+                    text-transform: capitalize;
+                    color: #989898;
+                }
+                h3 {
+                    font-weight: 600;
+                    font-size: 8px;
+                    line-height: 10px;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                    background-color: #39C394;
+                    height: 20px;
+                    border-radius: 15px;
+                    padding: 0 9px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .pro--title {
+                margin-top: 18px;
+                p {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-transform: capitalize;
+                    color: #000000;
+                    margin-top: 2px;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+            .pro--color {
+                @include phone {
+                    display: none;
+                }
+                display: flex;
+                margin-top: 23px;
+                align-items: center;
+                h3 {
+                    margin-right: 24px;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-transform: capitalize;
+                    color: #000000;
+                }
+                .color-wh {
+                    display: flex;
+                    align-items: center;
+                }
+                .right {
+                    margin-right: 16px;
+                }
+            }
+            .pro--amount {
+                @include phone {
+                    display: none;
+                }
+                h4 {
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-transform: capitalize;
+                    color: #000000;
+                    margin-top: 19px;
+                }
+                .add {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 28px;
+                    p {
+                        font-weight: bold;
+                        padding: 0px 6px 3px 6px;
+                        background-color: #F1F1F1;
+                        border-radius: 2px;
+                        font-size: 19px;
+                        cursor: pointer;
+                    }
+                    .amount {
+                        width: 62px;
+                        text-align: center;
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-transform: capitalize;
+                        color: #484848;
+                    }
+                }
+            }
+            .pro--buy {
+                margin-top: 23px;
+                display: flex;
+                gap: 7px;
+                .opas {
+                    background: #86D1B7;
+                }
+                p {
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                    background-color: #2F9773;
+                    width: 124px;
+                    height: 27px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+            }
+            .pro--hotline {
+                margin-top: 23px;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: capitalize;
+                color: #000000;
+                span {
+                    color: #2F9773;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .info__catagory {
+            display: grid;
+            gap: 8px;
+            background-color: #fff;
+            padding: 9px 11px;
+            @include phone {
+                padding: 20px 10px;
+                margin: 0 15px;
+            }
+            .catagory {
+                padding: 7px;
+                background-color: #F4F4F4;
+                .cata-first {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h1 {
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 23px;
+                        text-transform: capitalize;
+                        color: #194133;
+                    }
+                    span {
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-align: right;
+                        text-transform: capitalize;
+                        color: #FFFFFF;
+                        background-color: #FFCD6D;
+                        border-radius: 15px;
+                        padding: 0 10px;
+                    }
+                }
+                h3 {
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-decoration-line: line-through;
+                    text-transform: capitalize;
+                    color: #989898;
+                }
+                h1 {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 23px;
+                    text-transform: capitalize;
+                    color: #194133;
+                }
+                h2 {
+                    font-weight: bold;
+                    font-size: 10px;
+                    line-height: 13px;
+                    color: #194133;
+                }
+                p {
+                    font-size: 10px;
+                    line-height: 13px;
+                    color: #194133;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+                h4 {
+                    font-size: 10px;
+                    line-height: 13px;
+                    color: #194133;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #CBCBCB;
+                }
+                a {
+                    text-decoration: none;
+                    font-size: 10px;
+                    line-height: 13px;
+                    text-align: center;
+                    display: block;
+                    color: #194133;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .product__same {
+        margin-top: 45px;
+        @include phone {
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        h1 {
+            @include phone {
+                margin-bottom: 17px;
+            }
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            text-transform: capitalize;
+            margin-bottom: 32px;
+        }
+        .same--item {
+            display: flex;
+            height: 100%;
+            justify-content: space-between;
+            padding-bottom: 56px;
+            @include phone {
+                display: flex;
+                flex-direction: column;
+            }
+            .product--item {
+                width: 24%;
+                @include phone {
+                    width: 100%;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    background: #fff;
+                }
+                .item__img {
+                    background: url("/img/bg-img.png") no-repeat;
+                    background-size: 100% 100%;
+                    height: 183px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: flex-end;
+                    position: relative;
+                    p {
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-transform: capitalize;
+                        color: #FFFFFF;
+                        background-color: #39C494;
+                        border-radius: 15px;
+                        padding: 4px 15px;
+                        position: absolute;
+                        top: 13px;
+                        right: 16px;
+                    }
+                    .right {
+                        right: 77px;
+                    }
+                    h3 {
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-transform: capitalize;
+                        color: #000;
+                        background-color: #FFE70B;
+                        border-radius: 15px;
+                        padding: 4px 15px;
+                        position: absolute;
+                        top: 13px;
+                        right: 10px;
+                    }
+                }
+            }
+            .product--item:nth-child(1) {
+                @include phone {
+                    padding-top: 23px;
+                }
+            }
+            .product--item:nth-child(4) {
+                @include phone {
+                    padding-bottom: 33px;
+                }
+            }
+            .item__content {
+                padding: 14px;
+                background-color: #fff;
+                @include phone {
+                    background-color: #F5F5F5;
+                }
+                h2 {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-transform: capitalize;
+                }
+                h4 {
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 25px;
+                    text-decoration-line: line-through;
+                    text-transform: capitalize;
+                    color: #989898;
+                }
+                h3 {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 30px;
+                    text-transform: capitalize;
+                    color: #194133;
+                }
+                .item--buy {
+                    display: flex;
+                    gap: 8px;
+                    .opas {
+                        background: #86D1B7;
+                    }
+                    p {
+                        padding: 11px 14px;
+                        background-color: #2F9773;
+                        font-weight: 600;
+                        font-size: 10px;
+                        line-height: 13px;
+                        color: #FFFFFF;
+                        margin-top: 2px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
